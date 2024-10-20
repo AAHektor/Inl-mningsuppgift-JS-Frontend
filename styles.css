@@ -1889,18 +1889,23 @@ header .container {
         }
 
         button {
-            margin-top: 7rem;
+            margin-top: 5.5rem;
             padding: 1.2em;
             border-radius: 8px;
             box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.205);
             border: none;
             background-color: var(--clr-primary);
+
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
         }
     }
 
     .form {
         display: flex;
         flex-direction: column;
+        gap: .5rem;
 
         label {
             font-size: 16px;
@@ -1921,6 +1926,69 @@ header .container {
     .container {
         padding-top: 12rem;
         padding-bottom: 12rem;
+
+        display: flex;
+        gap: 10rem;
+    }
+
+    .maps-container {
+        img {
+            border-radius: 8px;
+        }
+    }
+
+    .medical-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .medical-card {
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+
+            h4 {
+                font-size: 24px;
+                font-weight: 800;
+                padding-bottom: 1rem;
+            }
+
+            span {
+                display: flex;
+                gap: .5rem;
+            }
+
+        }
+
+        .schedule {
+
+            span {
+                display: inline-flex;
+                font-weight: 800;
+            }
+        }
+
+        
+    }
+
+
+    .social-container {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            display: flex;
+            background-color: var(--clr-gray300);
+            padding: .7rem;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 6px;
+
+            cursor: pointer;
+        }
     }
 
 }
